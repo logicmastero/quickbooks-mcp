@@ -1,1 +1,44 @@
-
+{
+  "mcpServers": {
+    "quickbooks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-quickbooks@latest",
+        "--oauth-mode"
+      ],
+      "env": {
+        "QUICKBOOKS_AUTH_MODE": "oauth",
+        "QUICKBOOKS_OAUTH_PORT": "3762",
+        "QUICKBOOKS_REDIRECT_URI": "http://localhost:3762/callback",
+        "QUICKBOOKS_SCOPES": "com.intuit.quickbooks.accounting com.intuit.quickbooks.payment",
+        "QUICKBOOKS_ENVIRONMENT": "sandbox",
+        "QUICKBOOKS_API_VERSION": "v3",
+        "QUICKBOOKS_MINOR_VERSION": "75",
+        "MCP_QUICKBOOKS_FEATURES": "all"
+      },
+      "metadata": {
+        "name": "QuickBooks Integration",
+        "description": "Complete QuickBooks access with OAuth authentication",
+        "version": "1.0.0",
+        "author": "MCP QuickBooks",
+        "features": [
+          "oauth_authentication",
+          "company_info",
+          "invoices",
+          "customers",
+          "expenses",
+          "accounts",
+          "reports",
+          "transactions",
+          "vendors",
+          "payments",
+          "profit_loss",
+          "balance_sheet",
+          "cash_flow",
+          "tax_reports"
+        ]
+      }
+    }
+  }
+}
