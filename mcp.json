@@ -1,11 +1,10 @@
 {
   "mcpServers": {
     "quickbooks": {
-      "command": "node",
+      "command": "uvx",
       "args": [
-        "quickbooks-server.js"
-      ],
-      "cwd": "${HOME}/.claude/servers/quickbooks"
+        "mcp-server-fetch"
+      ]
     }
   }
 }
