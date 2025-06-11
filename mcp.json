@@ -1,11 +1,11 @@
 {
   "mcpServers": {
     "quickbooks": {
-      "command": "npx",
+      "command": "node",
       "args": [
-        "-y",
-        "quickbooks-mcp-server"
-      ]
+        "quickbooks-server.js"
+      ],
+      "cwd": "${HOME}/.claude/servers/quickbooks"
     }
   }
 }
